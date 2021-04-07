@@ -95,8 +95,9 @@ body{
     height: calc(2em + .75rem + 2px);
 }
 .right-bottpm-section {
-    padding-left: 154px;
+    padding-left: 0;
     padding-top: 42px;
+    margin-left: -61px;
 }
 .right-bottom-logo {
     background: url(../images/snacksBannerLogo.png);
@@ -110,7 +111,7 @@ body{
     width: 609px;
 }
 .right-bottom-section {
-    padding-left: 69px;
+    margin-left: -144px;
     padding-top: 33px;
     margin-bottom: 177px;
 }
@@ -295,7 +296,7 @@ button.btn.btn-primary {
         margin-left: -139px;
     }
     .banner-area {
-        padding-bottom: 0;
+        padding-bottom: 0px;
         background-size: auto;
     }
 }
@@ -305,6 +306,8 @@ button.btn.btn-primary {
     }
     .right-top-logo.sm-block {
         display: inline-block;
+		top: 100%;
+		position: absolute;
     }
     .right-bottom-section, .right-bottpm-section {
         margin-left: 0;
@@ -331,7 +334,214 @@ button.btn.btn-primary {
         width: 100%;
         display: inline-block;
     } */
+	.banner-area {
+    padding-bottom: 307px;
 }
+}
+
 @media (max-width: 768px){
-  
+	.bg-layout:before {
+		content: "";
+		background-image : url(../images/backgroundtop.png);
+		background-repeat:no-repeat;
+		position: absolute;
+		top: -29%;
+		left:0;
+		width: 100%;
+		height: 100%;
+		background-size: contain;		    
+	}
+	.bg-layout:after {
+		content: "";
+		background-image : url(../images/backgroundbottom.png);
+		background-repeat:no-repeat;
+		position: absolute;
+		bottom: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-size: contain;
+	}
+	
+	.right-bottom-logo {
+		width: 100%;
+	}
+
+	button.btn.btn-primary {
+		width: 100%;
+		text-transform: uppercase;
+	}	
+	.bg-layout {
+		background-size: contain;
+	}
+	.bg-layout .content {
+    padding: 0 30px;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+	}
+	
+	.right-bottom-logo {
+		background-size: contain;
+		height: 400px;
+	}
+	.banner-area {
+    padding-bottom: 240px;
+}
+	.right-bottom-logo .content {
+		    padding: 95px 20px 41px 330px;
+			width: 100%;
+		/*padding: 32px 20px 41px 190px;
+		text-align: justify;
+		width: 100%;*/
+	}
+	
+	.right-bottom-logo {
+		background-repeat: no-repeat;
+	}
+	
+	img.gadget-2 {
+		left: 30%;
+		top: -165px;
+	}
+	img.gadget-1 {
+		left: 5%;
+		top: -100px;
+	}
+	.footer-link{
+		margin-top: 125px;
+	}
+	
+}
+
+
+
+@media (max-width: 600px){
+	.bg-layout:before {
+		top: -22%;
+	}
+	.right-bottom-logo .content {
+		padding: 56px 20px 41px 264px;
+    }
+}
+
+@media (max-width: 575px){
+	.bg-layout:before {
+		top: -51px;
+	}
+	img.gadget-1 {
+		left: 48%;
+	}
+	img.gadget-2 {
+		left: 12%;
+	}
+}
+
+@media (max-width: 562px){
+	.bg-layout:before {
+		top: -49px;
+	}	
+	.right-bottom-logo .content {
+		padding: 42px 20px 41px 230px;
+	}
+}
+
+@media (max-width: 450px){
+	.right-bottom-logo {
+   		height: 275px;
+	}
+	.bg-layout:before {
+		top: -38px;
+	}
+	h3 {
+		font-size: 1.25rem;
+	}	
+	.sub-para {
+    	font-size: 16px;
+	}
+	.right-bottom-logo .content {
+		padding: 20px 10px 25px 180px;
+	}
+}
+
+
+@media screen and (max-width: 550px) and (min-width: 450px) {
+	.right-bottom-logo {
+   		height: 275px;
+	}
+	.bg-layout:before {
+		top: -44px;
+	}	
+	.sub-para {
+    	font-size: 14px;
+	}
+	.content h3 {
+		font-size: 15px;
+	}
+	.right-bottom-logo .content {
+		padding: 42px 20px 41px 230px;
+	}
+}
+
+@media (max-width: 414px){
+.bg-layout:before {
+    top: -36px;
+}
+img.gadget-2 {
+    left: 4%;
+    width: 187px;
+    top: -210px;
+}
+img.gadget-1 {
+    left: 55%;
+    top: -112px;
+    width: 150px;
+}
+.left-top-logo>img {
+    width: 238px;
+}
+.right-bottom-logo .content {
+    padding: 20px 10px 25px 169px;
+}
+.sub-para {
+    font-size: 16px;
+    line-height: 18px;
+}
+}
+@media (max-width: 360px) {
+	img{
+		width:100%;
+	}
+	.left-bottom-logo>img {
+		width: 240px;
+	}
+	.right-bottom-logo {
+   		height: 275px;
+	}
+	.bg-layout:before {
+		top: -31px;
+	}
+	
+	img.gadget-1 {
+		left:51%;
+		width: 155px; 
+	}
+	img.gadget-2 {
+		left: 0%;
+		width: 155px;
+	}
+	.footer-link {
+		margin-top: 70px;
+	}
+
+	.sub-para {
+    	font-size: 14px;
+		line-height: 18px;
+	}
+	.content h3 {
+		font-size: 15px;
+	}	
+	.right-bottom-logo .content {
+		padding: 22px ​20px 41px 130px;
+	}
 }
