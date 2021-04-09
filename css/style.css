@@ -367,6 +367,7 @@ button.btn.btn-primary {
 }
 .right-bottom-logo {
     background-size: contain;
+    height: 347px;
 }
 .modal-dialog:after {
     top: 72px;
@@ -915,7 +916,7 @@ img.gadget-2 {
 		width: 240px;
 	}
 	.right-bottom-logo {
-        height: 230px;
+        height: 185px;
     }
     .right-bottpm-section {
         margin-bottom: 0;
